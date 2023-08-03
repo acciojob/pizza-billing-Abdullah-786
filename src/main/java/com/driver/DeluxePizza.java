@@ -1,9 +1,16 @@
-package com.driver;
 
-public class DeluxePizza extends Pizza {
+public class DeluxPizza extends Pizza{
 
-    public DeluxePizza(Boolean isVeg) {
-        super(isVeg);
-        // your code goes here
-    }
+	public DeluxPizza(Boolean veg) {
+		super(veg);
+		super.addExtraCheese();
+		super.addExtraTopping();
+	}
+
+	@Override
+	public void addExtraCheese() {}
+
+	@Override
+	public void addExtraTopping() {}
+
 }
